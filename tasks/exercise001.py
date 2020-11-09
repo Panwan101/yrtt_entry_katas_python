@@ -6,4 +6,8 @@
 # Good luck!
 
 def repeats(arr):
-    return
+    unique_sum=0
+    for i in arr:
+        if arr.count(i) < 2:
+            unique_sum=unique_sum + i
+    return(unique_sum)

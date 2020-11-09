@@ -19,4 +19,25 @@
 # wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 
 def wave(people):
-    return
+    char_cntr=0
+    rtn_list=[]
+    for x in people:
+        print(x)
+        wave_str=""
+        x_len=len(x)
+        if x_len > 0:      #EMPTY STRING
+            if x != " ":
+                k = x.upper()
+                print(k)
+                wave_str=((people[0:(char_cntr)])+k+(people[(char_cntr+1):]))
+                rtn_list.append((wave_str))
+                print("rtn=",rtn_list)
+        else:                  #else if empty
+            wave_str=("")
+            rtn_list.append((wave_str))
+            break
+        print(char_cntr)
+        print(wave_str)
+        char_cntr += 1
+        print(rtn_list)
+    return(rtn_list)

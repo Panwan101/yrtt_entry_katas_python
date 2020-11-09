@@ -3,4 +3,5 @@
 # More examples in the test cases below.
 
 def past(h, m, s):
-    return
+    total_millisecs=((h*3600000)+(m*60000)+(s*1000))
+    return(total_millisecs)
